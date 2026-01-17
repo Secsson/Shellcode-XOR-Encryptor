@@ -1,16 +1,19 @@
 # Shellcode XOR Encryptor
 
-A small Python CLI tool that XOR-encrypts shellcode and outputs it as raw bytes, a Python array, or a C array.
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-## Usage
+> A small Python CLI tool that XOR-encrypts shellcode and outputs it as raw bytes, a Python array, or a C array.
 
-python xorcrypt.py --in raw.bin --out encrypted.bin --key test --format raw
+## Usage examples
 
-Example using a hex key and C output:
+raw output:
 
-python xorcrypt.py --in raw.bin --out encrypted.c --key 0x42 --format c
+python xorencryptor.py --in raw.bin --out encrypted.bin --key test --format raw
 
-## Arguments
+C output:
+
+python xorencryptor.py --in raw.bin --out encrypted.c --key 0x42 --format c
 
 | Argument | Description |
 | :--- | :--- |
