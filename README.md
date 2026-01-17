@@ -25,7 +25,7 @@ python3 xorencryptor.py --in raw.bin --out encrypted.c --key 0x42 --format c
 | `--key` | XOR key (string or hex, e.g. 0x42). |
 | `--format` | Output format: raw, python, or c. |
 
-| Output | Code Example |
+| Output format | Code Example |
 | :--- | :--- |
 | **C** | `unsigned char buf[] = { 0x12, 0xa1, 0x4f };` |
 | **Python** | `buf = [0x12, 0xa1, 0x4f]` |
