@@ -3,12 +3,11 @@ import sys
 import argparse
 
 def parse_key(key):
-    
     """
-    Allows for hex XOR-key.
+    Allows hex XORkeys.
     """
     if key.startswith("0x"):
-        return bytes([int(key, 16)])
+        return bytes.fromhex(key[2:])
     return key.encode()
 
 
@@ -16,9 +15,8 @@ def xor_data(data, key):
     """
     Encrypts data using XOR with the given key.
     """
-    key_bytes = key.encode()
-    key_len = len(key_bytes)
     key_bytes = parse_key(key)
+    key_len = len(key_bytes)
 
     
     encrypted_data = bytearray()
