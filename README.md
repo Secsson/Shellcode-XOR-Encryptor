@@ -1,7 +1,6 @@
 # Shellcode XOR Encryptor
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 > A small Python CLI tool that XOR-encrypts shellcode and outputs it as raw bytes, a Python array, or a C array.
 
