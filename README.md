@@ -12,10 +12,10 @@ python xorcrypt.py --in raw.bin --out encrypted.c --key 0x42 --format c
 
 ## Arguments
 
---in     input file containing raw shellcode  
---out    output file  
---key    XOR key (string or hex, e.g. 0x42)  
---format output format: raw, python, or c  
+--in            input file containing raw shellcode  
+--out           output file  
+--key           XOR key (string or hex, e.g. 0x42)  
+--format        output format: raw, python, or c  
 
 ## Example output
 
